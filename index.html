@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/Abirami-Photo.jpeg" alt="Your Profile Picture" class="profile-picture">
+            <h1>P.Abirami</h1>
+            <p>Am Computer Science</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>I'm an enthusiastic computer science student with a deep passion for developing dynamic, user-friendly websites. My motivation lies in building high-performance web applications that deliver exceptional user experiences and seamless digital solutions. I stay current with the latest industry trends and innovations. Additionally, I'm dedicated to sharing my knowledge, helping others understand web technologies, adopt best practices, and create secure, scalable websites.</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <p>BSC - Computer Science in Bharathidasan university</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>Javascript</li>            
+                <li>Python</li>             
+                <li>Java</li>
+                <li>DBMS</li>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="#">E Cart website</a></li>
+                <li><a href="#">Cloud Security IBM</a></li>
+                <li><a href="#">IBM chatbot</a></li>
+                <li><a href="#">College Portal</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="section-content">
+            <center>
+                <h2>Resume</h2>
+                <a href="files/Abirami-Resume.pdf" target="_blank" class="download-button">Download CV</a>
+            </center>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 P.Abirami</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
